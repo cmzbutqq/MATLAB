@@ -1,0 +1,12 @@
+subplot(2,3,1);
+plot_S(100);
+subplot(2,3,4);
+plot_S(10000);
+subplot(2,3,2);
+plot_H(100);
+subplot(2,3,5);
+plot_H(10000);
+subplot(2,3,3);
+plot_G(6);
+subplot(2,3,6);
+plot_G(20);

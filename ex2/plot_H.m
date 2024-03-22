@@ -12,6 +12,8 @@ function plot_H(n)
  end
  Hi=linspace(log(2),log(2),n);
  plot(X,Hi,'--',X,H);
+ legend('fitting','actual');
  text(n/5,log(2),"limit=ln2");
+ title("H-n from 1 to "+ num2str(n)+" with fitting graph");
 end
 

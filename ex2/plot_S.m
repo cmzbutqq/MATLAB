@@ -10,6 +10,8 @@ function plot_S(n)
      Si=[Si,log(x)+r];
  end
      plot (X,Si,'--',X,S);
+     legend('fitting','actual');
      text(n/4,log(n/4)+0.5,"Si=ln x + 0.58");
+     title("S-n from 1 to "+ num2str(n)+" with fitting graph");
 end
 

@@ -13,6 +13,8 @@ function plot_G(n)
  f=polyfit(X,G,1);
  Gi=polyval(f,X);
  plot(X,Gi,'--',X,G);
+ legend('fitting','actual');
  text(2,2,"Gi="+num2str(f(1))+"x+"+num2str(f(2)));
+ title("G-n from 1 to "+ num2str(n)+" with fitting graph");
 end
 
