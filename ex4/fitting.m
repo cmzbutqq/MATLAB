@@ -14,7 +14,7 @@ switch choice
         if flag
             xi=x;
             yi=y;
-            zi=z;     
+            zi=z;
         else
             xi=x;
             yi=y;
@@ -42,15 +42,15 @@ switch choice
     otherwise
         disp("无效选择");
 end
-    %画图部分
-    if flag
-        poly = polyshape([xi flip(xi)],[yi flip(zi)]);
-        plot(poly);
-        text(mean(x),mean([y z]),"AREA:"+area(poly),"HorizontalAlignment","center");%这里计算了面积
-    else
-        plot(x,y);
-    end
-    title(description);
-    axis equal;
+%画图部分
+if flag
+    poly = polyshape([xi flip(xi)],[yi flip(zi)]);
+    plot(poly);
+    text(mean(x),mean([y z]),"AREA:"+area(poly),"HorizontalAlignment","center");%这里计算了面积
+else
+    plot(x,y);
+end
+title(description);
+axis equal;
 end
 
