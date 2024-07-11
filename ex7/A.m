@@ -24,7 +24,7 @@ disp(b)
 
 disp("(3)")
 plot(r,"+"),title("r,throw 8th and 20th")
-disp("throw 2th and 19th")
+disp("throw 8th and 20th")
 disp("b: ")
 x1=[x1(1:7);x1(9:19)];
 x2=[x2(1:7);x2(9:19)];
